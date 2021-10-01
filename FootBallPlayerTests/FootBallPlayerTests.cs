@@ -19,7 +19,7 @@ namespace TestFootBallPlayer
         public void TestNameConstructor()
         {
             FootBallPlayer fbp = new FootBallPlayer(1, "Anders", 3000, 50);
-            //Assert.AreEqual(1, fbp.Id);
+            Assert.AreEqual(1, fbp.Id);
             Assert.AreEqual("Anders", fbp.Name);
             Assert.AreEqual(3000, fbp.Price);
             Assert.AreEqual(50, fbp.ShirtNumber);
