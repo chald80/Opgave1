@@ -42,6 +42,16 @@ namespace TestFootBallPlayer
             Assert.ThrowsException<ArgumentOutOfRangeException>(() => _footBallPlayer.Price = 0);
 
         }
+
+        [TestMethod]
+        public void TestShirtNumbers()
+        {
+            _footBallPlayer.ShirtNumber = 42;
+            Assert.AreEqual(42, _footBallPlayer.ShirtNumber);
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => _footBallPlayer.ShirtNumber = 200);
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => _footBallPlayer.ShirtNumber = 0);
+
+        }
     }
 
 

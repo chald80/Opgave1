@@ -19,10 +19,15 @@ namespace Opgave1
             ShirtNumber = shirtNumber;
         }
 
+        public FootBallPlayer()
+        {
+
+        }
+
         public int Id
         {
             get => _id;
-            set => value = _id;
+            set => _id = value;
         }
 
         public string Name
